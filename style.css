@@ -4,12 +4,11 @@
 
 #body2 {
     background: url('fondo-01.png') no-repeat center center/cover;
-    background-color: black;
 }
 .home-section {
-    height: 50%;
-    padding: 100px;
-    margin: 100px;
+    height: 100%;
+    padding: 200px;
+    margin: 200px;
 }
 
 #contenedorOpacidad {
@@ -29,4 +28,12 @@
 #container {
     margin: auto;
     padding: 300px;
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        min-height: 100vh; /* Ajusta el tamaño para móviles */
+        padding: 20px 10px; /* Reduce el padding */
+    }
+
 }
